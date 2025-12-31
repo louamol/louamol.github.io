@@ -1,22 +1,169 @@
-p {
-    font-size: 1em;
-    color: black;
-    text-align: justify;
+/* --Normal mode-- */
+
+body {
+    background-color: white;
 }
 
-h1 {
-    font-size: 2em;
+h1,h2 {
+  font-size: 2em;
+  color: black;
+  font-family: "DM Serif Display", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+p.boxed {
+  font-family: "Public Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1em;
+  color: black;
+  text-align: justify;
+  margin: 30px;
+  padding: 30px;
+  background-color: #DBEBF3;
+  border-radius: 1em 1em 1em 1em;
+  line-height: 1.7;
+}
+
+p.unboxed {
+  font-family: "Public Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1em;
+  color: black;
+  text-align: justify;
+  margin: 20px;
+  padding: 20px;
+  line-height: 1.7;
+  border:red;
+  border-style: dashed;
+}
+
+p.unboxed_col {
+  font-family: "Public Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1em;
+  color: black;
+  text-align: justify;
+  margin: 30px;
+  padding: 30px;
+  width: 60%;
+  line-height: 1.7;
+  border:red;
+  border-style: dashed;
+}
+
+p.unboxed_col_flex {
+  font-family: "Public Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1em;
+  color: black;
+  text-align: justify;
+  margin: 30px;
+  padding: 30px;
+  max-width: 60%;
+  border:red;
+  border-style: dashed;
+}
+
+.pic_col {
+  max-width: 40%;
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
+  border:red;
+  border-style: dashed;
+}
+
+.pers_pic {
+  max-width: 200px;
+}
+
+/* --Others-- */
+
+.banner {
+  padding: 20px 0;
+  background: url(Pictures/banner_grad.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 40px;
+
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  color:white
+}
+
+.foot {
+  font-family: "Public Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1em;
+  background-color: #325263;
+  color: white;
+  text-align: justify;
+  margin: 10px;
+  padding: 10px;
+}
+
+.box_col_right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.box_col_left {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.box_center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.my_button {
+    text-decoration: none;
     color: black;
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.my_button:hover {
+    opacity: 60%;
+}
+
+.my_button:active {
+    background-color: blue;
 }
 
 .class_p_important {
     color: red;
 }
 
-.class_w_green {
+.class_weird_text {
     color: green;
+    font-family: "DM Serif Text", serif;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+
 }
 
+/* --Google fonts-- */
 
 .roboto-font {
     font-family: "Roboto", sans-serif;
@@ -40,31 +187,6 @@ h1 {
     font-style: normal;
   }
 
-.gentium-plus-regular {
-    font-family: "Gentium Plus", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-.gentium-plus-bold {
-    font-family: "Gentium Plus", serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-.gentium-plus-regular-italic {
-    font-family: "Gentium Plus", serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-.gentium-plus-bold-italic {
-    font-family: "Gentium Plus", serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-  
-
 .dm-serif-text-regular {
     font-family: "DM Serif Text", serif;
     font-weight: 400;
@@ -77,6 +199,23 @@ h1 {
     font-style: italic;
   }
 
+.dm-serif-display-regular {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.dm-serif-display-regular-italic {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
 
 
-/* ceci est un commentaire */
+.public-sans-font {
+  font-family: "Public Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+  
